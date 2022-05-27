@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SearchBar component should handle onChange event 1`] = `
+<div
+  className="search-bar"
+>
+  <input
+    onChange={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    onKeyDown={[MockFunction]}
+    placeholder="search"
+    value=""
+  />
+</div>
+`;
+
+exports[`test SearchBar component should render SearchBar component 1`] = `
+<div
+  className="search-bar"
+>
+  <input
+    onChange={[MockFunction]}
+    onKeyDown={[MockFunction]}
+    placeholder="search"
+    value=""
+  />
+</div>
+`;
