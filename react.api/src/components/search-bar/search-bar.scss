@@ -1,0 +1,31 @@
+.search-bar {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #00e1ff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em auto;
+  padding: 0.5em 0.5em 0.5em 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  top: 20px;
+
+  &:hover,
+  &:focus {
+    background: #00ffdd;
+  }
+
+  & input {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font: inherit;
+    outline: 0;
+    width: 100%;
+  }
+}
