@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ProfileCardList component should render ProfileCardList component 1`] = `
+<div
+  className="profile-card__list"
+>
+  <ProfileCard
+    avatar="test1-avatar"
+    birthday="01/01/2001"
+    city="test1-city"
+    firstname="test1-firstname"
+    gender="test1-gender"
+    gifts={
+      Array [
+        "test1-gift1",
+        "test1-gift2",
+      ]
+    }
+    id="test1-id"
+    key="test1-id"
+    lastname="test1-firstname"
+    zipcode="22555"
+  />
+  <ProfileCard
+    avatar="test2-avatar"
+    birthday="02/02/2002"
+    city="test2-city"
+    firstname="test2-firstname"
+    gender="test2-gender"
+    gifts={
+      Array [
+        "test2-gift1",
+        "test2-gift2",
+      ]
+    }
+    id="test2-id"
+    key="test2-id"
+    lastname="test2-firstname"
+    zipcode="22555"
+  />
+  <ProfileCard
+    avatar="test3-avatar"
+    birthday="03/03/2003"
+    city="test3-city"
+    firstname="test3-firstname"
+    gender="test3-gender"
+    gifts={Array []}
+    id="test3-id"
+    key="test3-id"
+    lastname="test3-firstname"
+    zipcode="22555"
+  />
+</div>
+`;

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test CardProfile component should render Card component 1`] = `
+<div
+  className="card-profile"
+>
+  <img
+    alt="avatar!"
+    className="avatar"
+    src="test1-avatar"
+  />
+  <div
+    className="card-details"
+  >
+    <span
+      className="card-profile__name"
+    >
+      test1-firstname test1-firstname
+    </span>
+    <span>
+      <i>
+        birthday: 
+      </i>
+      01/01/2001
+    </span>
+    <span>
+      <i>
+        adress: 
+      </i>
+      22555 test1-city
+    </span>
+    <span>
+      <i>
+        gender: 
+      </i>
+      test1-gender
+    </span>
+    <span>
+      <i>
+        gifts: 
+      </i>
+      test1-gift1, test1-gift2
+    </span>
+  </div>
+</div>
+`;
