@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test AboutPage component should render AboutPage component 1`] = `
+<Fragment>
+  <Header
+    title="test"
+  />
+  <main
+    className="main container"
+  >
+    <div
+      className="content"
+    >
+      <img
+        alt="programmer"
+        className="about-image"
+        src="/assets/images/Professional-Programmer.jpg"
+      />
+      <SocialBar />
+    </div>
+  </main>
+</Fragment>
+`;

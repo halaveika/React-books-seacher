@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SocialBar component should render SocialBar component loaded 1`] = `
+<div
+  className="social-bar"
+>
+  <a
+    href="https://github.com/halaveika"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <div
+      className="social-item"
+      style={
+        Object {
+          "backgroundImage": "url(\\"./assets/images/github.svg\\")",
+        }
+      }
+    />
+  </a>
+  <a
+    href="https://www.facebook.com/aliaksandr.halaveika"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <div
+      className="social-item"
+      style={
+        Object {
+          "backgroundImage": "url(\\"./assets/images/facebook.svg\\")",
+        }
+      }
+    />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/aliaksandr-halaveika-805a53191/"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <div
+      className="social-item"
+      style={
+        Object {
+          "backgroundImage": "url(\\"./assets/images/linkedin.svg\\")",
+        }
+      }
+    />
+  </a>
+  <a
+    href="https://www.youtube.com/c/RollingScopesSchool"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <div
+      className="social-item"
+      style={
+        Object {
+          "backgroundImage": "url(\\"./assets/images/youtube.svg\\")",
+        }
+      }
+    />
+  </a>
+</div>
+`;
