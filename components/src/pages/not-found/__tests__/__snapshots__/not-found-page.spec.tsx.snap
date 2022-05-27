@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test NotFoundPage component should render NotFoundPage component 1`] = `
+<Fragment>
+  <Header
+    title="test"
+  />
+  <div
+    className="container"
+  >
+    <div
+      className="content"
+    >
+      <img
+        alt="page_not_found"
+        className="not-found-image"
+        src="/assets/images/error-404.png"
+      />
+    </div>
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MainPage component should render App component 1`] = `
+<div
+  className="App container"
+>
+  <AppRouter />
+  <Footer />
+</div>
+`;

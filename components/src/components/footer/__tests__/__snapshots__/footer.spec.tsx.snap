@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Footer component should render Footer component loaded 1`] = `
+<footer
+  className="footer container"
+>
+  <div
+    className="content"
+  >
+    <span
+      className="title"
+    >
+      Rsschool React 2022Q1
+    </span>
+    <span
+      className="copyright"
+    >
+      COPYRIGHT © 2022
+    </span>
+    <span>
+      <a
+        href="https://github.com/halaveika"
+        rel="noreferrer"
+        target="_blank"
+      >
+        HALAVEIKA ALIAKSANDR
+      </a>
+    </span>
+  </div>
+</footer>
+`;
