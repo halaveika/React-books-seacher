@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Switcher component should render Switcher component loaded 1`] = `
+<label
+  className="switch"
+>
+  <input
+    id="testId"
+    type="checkbox"
+  />
+  <span
+    className="slider"
+  />
+</label>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ProfilePage component should render ProfilePage component 1`] = `
+<Fragment>
+  <Header
+    title="test"
+  />
+  <main
+    className="main container"
+  >
+    <div
+      className="content"
+    >
+      <ProfileForm
+        addCard={[Function]}
+      />
+      <ProfileCardList
+        cards={Array []}
+      />
+    </div>
+  </main>
+</Fragment>
+`;
