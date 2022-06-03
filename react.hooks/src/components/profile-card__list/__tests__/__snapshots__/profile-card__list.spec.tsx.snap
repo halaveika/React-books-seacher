@@ -6,24 +6,19 @@ exports[`test ProfileCardList component should render ProfileCardList component 
 >
   <ProfileCard
     avatar="test1-avatar"
-    birthday="01/01/2001"
+    birthday="2011-01-01"
     city="test1-city"
-    firstname="test1-firstname"
+    firstname="firstname"
     gender="test1-gender"
-    gifts={
-      Array [
-        "test1-gift1",
-        "test1-gift2",
-      ]
-    }
+    gifts={Array []}
     id="test1-id"
     key="test1-id"
-    lastname="test1-firstname"
+    lastname="lastname"
     zipcode="22555"
   />
   <ProfileCard
     avatar="test2-avatar"
-    birthday="02/02/2002"
+    birthday="2011-01-01"
     city="test2-city"
     firstname="test2-firstname"
     gender="test2-gender"
@@ -40,7 +35,7 @@ exports[`test ProfileCardList component should render ProfileCardList component 
   />
   <ProfileCard
     avatar="test3-avatar"
-    birthday="03/03/2003"
+    birthday="2011-01-01"
     city="test3-city"
     firstname="test3-firstname"
     gender="test3-gender"
