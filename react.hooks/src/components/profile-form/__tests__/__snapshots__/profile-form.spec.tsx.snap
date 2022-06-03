@@ -18,8 +18,9 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
     >
       <input
         id="firstname"
+        name="firstname"
+        onBlur={[Function]}
         onChange={[Function]}
-        required={true}
         type="text"
       />
       <label
@@ -41,8 +42,9 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
     >
       <input
         id="lastname"
+        name="lastname"
+        onBlur={[Function]}
         onChange={[Function]}
-        required={true}
         type="text"
       />
       <label
@@ -64,8 +66,9 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
     >
       <input
         id="zipcode"
+        name="zipcode"
+        onBlur={[Function]}
         onChange={[Function]}
-        required={true}
         type="number"
       />
       <label
@@ -86,14 +89,15 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       className="input-container"
     >
       <input
-        id="birthdayDate"
+        id="birthday"
+        name="birthday"
+        onBlur={[Function]}
         onChange={[Function]}
-        required={true}
         type="date"
       />
       <label
         className="label-validation"
-        htmlFor="birthdayDate"
+        htmlFor="birthday"
       />
     </div>
   </div>
@@ -111,8 +115,8 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       <select
         id="city"
         name="city"
+        onBlur={[Function]}
         onChange={[Function]}
-        required={true}
       >
         <option
           value=""
@@ -174,7 +178,10 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       id="gender"
       refProp={
         Object {
-          "current": null,
+          "name": "gender",
+          "onBlur": [Function],
+          "onChange": [Function],
+          "ref": [Function],
         }
       }
     />
@@ -193,8 +200,9 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       <input
         accept="image/*"
         id="avatar"
+        name="avatar"
+        onBlur={[Function]}
         onChange={[Function]}
-        required={true}
         type="file"
       />
       <label
@@ -219,7 +227,11 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       </label>
       <input
         id="badge"
+        name="gifts"
+        onBlur={[Function]}
+        onChange={[Function]}
         type="checkbox"
+        value="badge"
       />
     </div>
     <div
@@ -232,7 +244,11 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       </label>
       <input
         id="calendar"
+        name="gifts"
+        onBlur={[Function]}
+        onChange={[Function]}
         type="checkbox"
+        value="calendar"
       />
     </div>
     <div
@@ -245,7 +261,11 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       </label>
       <input
         id="cup"
+        name="gifts"
+        onBlur={[Function]}
+        onChange={[Function]}
         type="checkbox"
+        value="cup"
       />
     </div>
     <div
@@ -258,13 +278,17 @@ exports[`test ProfileForm component should render ProfileForm component 1`] = `
       </label>
       <input
         id="pencil"
+        name="gifts"
+        onBlur={[Function]}
+        onChange={[Function]}
         type="checkbox"
+        value="pencil"
       />
     </div>
   </fieldset>
   <button
     className="submit-btn"
-    disabled={false}
+    disabled={true}
     type="submit"
   >
     Submit

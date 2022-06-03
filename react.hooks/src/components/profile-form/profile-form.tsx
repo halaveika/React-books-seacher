@@ -142,7 +142,7 @@ const ProfileForm = (props: ProfileFormProps) => {
       <div className="profile-item">
         <span className="profile-item__title">Birthday date</span>
         <div className="input-container">
-          <input type="date" {...birthdayDateInput} id="birthdayDate"></input>
+          <input type="date" {...birthdayDateInput} id="birthday"></input>
           <label className="label-validation" htmlFor="birthday">
             {errors.birthday?.message}
           </label>
