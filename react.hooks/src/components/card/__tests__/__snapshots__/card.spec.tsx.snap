@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Card component should handle more-btn click 1`] = `
+<div
+  className="card__hovered"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <CardModal
+    authors={
+      Array [
+        "Jennifer E. Smith",
+      ]
+    }
+    averageRating={4.3}
+    categories={
+      Array [
+        "detevite",
+        "adventure",
+      ]
+    }
+    description="Right after the sudden death of her mother—her first and most devoted fan—and just before the launch of her high-stakes sophomore album, Greta James falls apart on stage. The footage quickly goes viral and she stops playing, her career suddenly in jeopardy—the kind of jeopardy her father, Conrad, has always predicted; the kind he warned her about when he urged her to make more practical choices with her life."
+    imageLinks={
+      Object {
+        "smallThumbnail": "test",
+        "thumbnail": "test",
+      }
+    }
+    language="en"
+    pageCount={320}
+    printType="test"
+    publishedDate="test-date"
+    publisher="test-publisher"
+    ratingsCount={3}
+    subtitle="test-subtitle"
+    title="The Unsinkable Greta James The Unsinkable Greta James The Unsinkable Greta James"
+  >
+    <div
+      className="overlay__active"
+    />
+  </CardModal>
+  <img
+    alt="Poster!"
+    className="poster__active"
+    src="test"
+  />
+  <span
+    className="overview"
+  >
+    Right after the sudden death of her mother—her first and most devoted fan—and just before the launch of her high-stakes sophomore album, Greta James falls apart on stage. The footage quickly goes viral and she stops playing, her career suddenly in jeopardy—the kind of jeopardy her father, Conrad, has always predicted; the kind he warned her about when he urged her to make more practical choices with her life.
+  </span>
+</div>
+`;
+
+exports[`test Card component should handle toggleHover 1`] = `
+<div
+  className="card__hovered"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <CardModal
+    authors={
+      Array [
+        "Jennifer E. Smith",
+      ]
+    }
+    averageRating={4.3}
+    categories={
+      Array [
+        "detevite",
+        "adventure",
+      ]
+    }
+    description="Right after the sudden death of her mother—her first and most devoted fan—and just before the launch of her high-stakes sophomore album, Greta James falls apart on stage. The footage quickly goes viral and she stops playing, her career suddenly in jeopardy—the kind of jeopardy her father, Conrad, has always predicted; the kind he warned her about when he urged her to make more practical choices with her life."
+    imageLinks={
+      Object {
+        "smallThumbnail": "test",
+        "thumbnail": "test",
+      }
+    }
+    language="en"
+    pageCount={320}
+    printType="test"
+    publishedDate="test-date"
+    publisher="test-publisher"
+    ratingsCount={3}
+    subtitle="test-subtitle"
+    title="The Unsinkable Greta James The Unsinkable Greta James The Unsinkable Greta James"
+  >
+    <div
+      className="overlay"
+    />
+  </CardModal>
+  <img
+    alt="Poster!"
+    className="poster"
+    src="test"
+  />
+  <button
+    className="more-btn"
+    onClick={[Function]}
+  >
+    overview
+  </button>
+  <div
+    className="card-details"
+  >
+    <span
+      className="card-title"
+    >
+      The Unsinkable Greta James The Unsinkable Greta James The Unsinkable Greta James
+    </span>
+    <span
+      className="card-author"
+    >
+      Jennifer E. Smith
+    </span>
+    <RatingBar
+      averageRating={4.3}
+    />
+    <span
+      className="card-categories"
+    >
+      detevite, adventure
+    </span>
+  </div>
+</div>
+`;
+
+exports[`test Card component should render Card component 1`] = `
+<div
+  className="card"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <CardModal
+    authors={
+      Array [
+        "Jennifer E. Smith",
+      ]
+    }
+    averageRating={4.3}
+    categories={
+      Array [
+        "detevite",
+        "adventure",
+      ]
+    }
+    description="Right after the sudden death of her mother—her first and most devoted fan—and just before the launch of her high-stakes sophomore album, Greta James falls apart on stage. The footage quickly goes viral and she stops playing, her career suddenly in jeopardy—the kind of jeopardy her father, Conrad, has always predicted; the kind he warned her about when he urged her to make more practical choices with her life."
+    imageLinks={
+      Object {
+        "smallThumbnail": "test",
+        "thumbnail": "test",
+      }
+    }
+    language="en"
+    pageCount={320}
+    printType="test"
+    publishedDate="test-date"
+    publisher="test-publisher"
+    ratingsCount={3}
+    subtitle="test-subtitle"
+    title="The Unsinkable Greta James The Unsinkable Greta James The Unsinkable Greta James"
+  >
+    <div
+      className="overlay"
+    />
+  </CardModal>
+  <img
+    alt="Poster!"
+    className="poster"
+    src="test"
+  />
+  <div
+    className="card-details"
+  >
+    <span
+      className="card-title"
+    >
+      The Unsinkable Greta James The Unsinkable Greta James The Unsinkable Greta James
+    </span>
+    <span
+      className="card-author"
+    >
+      Jennifer E. Smith
+    </span>
+    <RatingBar
+      averageRating={4.3}
+    />
+    <span
+      className="card-categories"
+    >
+      detevite, adventure
+    </span>
+  </div>
+</div>
+`;
