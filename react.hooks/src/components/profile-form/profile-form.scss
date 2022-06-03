@@ -73,6 +73,10 @@
     color: white;
   }
 
+  &:disabled {
+    background-color:gray;
+  }
+
 }
 
 
