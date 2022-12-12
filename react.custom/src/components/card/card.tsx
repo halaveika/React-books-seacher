@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { setDetailsPage } from '../../store/features/view/viewSlice';
+import { useStoreContext } from '../../store/store';
 import './card.scss';
 import RatingBar from '../rating-bar';
+import { setDetailsPage } from '../../store/actions/view-actions';
 
 type CardProps = {
   authors: string[];
@@ -37,7 +37,7 @@ const Card = ({
   subtitle,
 }: CardProps) => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const { state, dispatch } = useStoreContext();
   const [interactive, setInteractive] = React.useState({ hovered: false, active: false });
 
   const detailsProps = {

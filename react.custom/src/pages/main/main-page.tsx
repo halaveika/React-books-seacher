@@ -6,30 +6,27 @@ import './main-page.scss';
 import HtttpService from '../../modules/api/http-service';
 import { searchResponseType } from '../../common/types/searchResponse';
 import Spinner from '../../components/spinner';
+import {
+  setSearchValue,
+  getCards,
+  setOrder,
+  setPage,
+  setPageSize,
+  setTotalCount,
+} from '../../store/actions/view-actions';
+import { useStoreContext } from '../../store/store';
 import Pagination from '../../components/pagination';
 import { PAGE_SIZE_ARR, FILTER_ARR } from '../../common/constants';
 import { SelectProps } from '../../components/select/select';
 import Select from '../../components/select';
-import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../../store/reducers/rootReducer';
-import {
-  getCards,
-  setOrder,
-  setSearchValue,
-  setTotalCount,
-  setPage,
-  setPageSize,
-} from '../../store/features/view/viewSlice';
 
 type MainPageProps = {
   title: string;
 };
 
 const MainPage = (props: MainPageProps): JSX.Element => {
-  const dispatch = useDispatch();
-  const { searchValue, page, pageSize, totalCount, cards, order } = useSelector(
-    (state: RootState) => state.view
-  );
+  const { state, dispatch } = useStoreContext();
+  const { searchValue, page, pageSize, totalCount, cards, order } = state;
   const [isLoading, setLoading] = React.useState(false);
   const [localSearchValue, setLocalSearchValue] = React.useState(searchValue);
 
@@ -49,9 +46,9 @@ const MainPage = (props: MainPageProps): JSX.Element => {
   const fetchData = async () => {
     setLoading(true);
     const response = (await HtttpService.searchBooksRequest(
-      searchValue,
-      page,
-      pageSize
+      state.searchValue,
+      state.page,
+      state.pageSize
     )) as searchResponseType;
     if (response) {
       const cards = response.items.map((e) => ({
@@ -112,12 +109,12 @@ const MainPage = (props: MainPageProps): JSX.Element => {
             <Spinner></Spinner>
           ) : (
             <>
-              <CardList cards={cards || []}></CardList>
+              <CardList cards={state.cards || []}></CardList>
               <Pagination
                 onPageChange={changePage}
-                totalCount={totalCount}
-                currentPage={page + 1}
-                pageSize={pageSize}
+                totalCount={state.totalCount}
+                currentPage={state.page + 1}
+                pageSize={state.pageSize}
                 selectPageSizeProps={selectPageSize}
               ></Pagination>
             </>
