@@ -27,7 +27,7 @@
     "lint": "eslint --ext .js,.ts,.tsx,.jsx --fix src/",
     "format": "prettier . --write",
     "pre-commit": "lint-staged",
-    "prepare": "cd ../ && husky install ./react.redux/.husky"
+    "prepare": "husky install .husky"
   },
   "eslintConfig": {
     "extends": [
