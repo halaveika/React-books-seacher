@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test RatingBar component should render RatingBar component loaded 1`] = `
+<div
+  className="rating-bar"
+>
+  <span>
+    Rating: 
+  </span>
+</div>
+`;
