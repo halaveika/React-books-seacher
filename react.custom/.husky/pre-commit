@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd ./react.redux && npm run pre-commit
+cd ./react.custom && npm run pre-commit

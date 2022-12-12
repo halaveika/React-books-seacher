@@ -2,9 +2,8 @@ import React from 'react';
 import Header from '../../components/header';
 import './details-page.scss';
 import { useNavigate } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../../store/reducers/rootReducer';
-import { setDetailsPage } from '../../store/features/view/viewSlice';
+import { setDetailsPage } from '../../store/actions/view-actions';
+import { useStoreContext } from '../../store/store';
 import DetailsType from '../../common/types/details';
 
 type DetailsPageProps = {
@@ -12,8 +11,7 @@ type DetailsPageProps = {
 };
 
 const DetailsPage = (props: DetailsPageProps): JSX.Element => {
-  const dispatch = useDispatch();
-  const details = useSelector((state: RootState) => state.view.details);
+  const { state, dispatch } = useStoreContext();
   const {
     authors,
     averageRating,
@@ -28,11 +26,11 @@ const DetailsPage = (props: DetailsPageProps): JSX.Element => {
     subtitle,
     title,
     imageLinks,
-  } = details as DetailsType;
+  } = state.details as DetailsType;
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    if (!details) {
+    if (!state.details) {
       navigate('/', { replace: true });
     }
   }, []);
